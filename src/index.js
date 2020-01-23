@@ -31,7 +31,7 @@ class Index extends React.Component {
 
                 <div>
                     
-                <h1>asdasd</h1>
+                   
 
                     <div> {/* for wrapping jsx components or use Fragment <> </> */}
                         <Router>
@@ -44,11 +44,11 @@ class Index extends React.Component {
                                         </Nav.Link>
                                     </Nav.Item>
 
-                                    <Nav.Item>
+                                    {/* <Nav.Item>
                                         <Nav.Link as={Link} to="/registration">
                                             Registration
                                         </Nav.Link>
-                                    </Nav.Item>
+                                    </Nav.Item> */}
 
                                     <Nav.Item>
                                         <Nav.Link as={Link} to="/login">
@@ -71,9 +71,9 @@ class Index extends React.Component {
                                     < Login />
                                 </Route>
 
-                                <Route exact path="/registration">
+                                {/* <Route exact path="/registration">
                                     <Registration />
-                                </Route>
+                                </Route> */}
                                 
                             </Switch>
                         </Router>
