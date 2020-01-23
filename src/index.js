@@ -5,17 +5,17 @@ import ReactDOM from 'react-dom'
 import{
     BrowserRouter as Router,
     Switch,
-    Link, //ahref equiv
-    Route //to catch the clicked route
+    Link, 
+    Route 
 } from 'react-router-dom'
 
 import {
     Nav, Container, Row, Col, Card
 } from 'react-bootstrap'
 
-import Login from './components/login/login' // folder then filename
+import Login from './components/login/login'
 
-// import Registration from './components/Registration/Registration'
+import Registration from './components/registation/registration'
 
 class Index extends React.Component {
 
@@ -44,15 +44,15 @@ class Index extends React.Component {
                                         </Nav.Link>
                                     </Nav.Item>
 
-                                    {/* <Nav.Item>
-                                        <Nav.Link as={Link} to="/registration">
-                                            Registration
-                                        </Nav.Link>
-                                    </Nav.Item> */}
-
                                     <Nav.Item>
                                         <Nav.Link as={Link} to="/login">
                                                 Login
+                                        </Nav.Link>
+                                    </Nav.Item>
+
+                                    <Nav.Item>
+                                        <Nav.Link as={Link} to="/registration">
+                                            Registration
                                         </Nav.Link>
                                     </Nav.Item>
 
@@ -71,9 +71,9 @@ class Index extends React.Component {
                                     < Login />
                                 </Route>
 
-                                {/* <Route exact path="/registration">
+                                <Route exact path="/registration">
                                     <Registration />
-                                </Route> */}
+                                </Route>
                                 
                             </Switch>
                         </Router>
