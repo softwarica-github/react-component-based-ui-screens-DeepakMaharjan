@@ -12,6 +12,7 @@ class Registration extends React.Component{
         this.state={
             username:'',
             password:'',
+            repassword: '',
             validationMessage:'',
             redirect:false
 
@@ -27,6 +28,9 @@ class Registration extends React.Component{
 
     passwordChangeHandler = (event) => {
         this.setState({password: event.target.value})
+    }
+    repasswordChangeHandler = (event) => {
+        this.setState({repassword: event.target.value})
     }
 
     formSubmitHandler = (e) => {
@@ -102,7 +106,7 @@ class Registration extends React.Component{
 
                     <Form.Group controlId="formBasicPassword">
                         <Form.Label>Re-Password</Form.Label>
-                        <Form.Control type="password" placeholder="Re-Password" value={this.state.password} onChange={this.passwordChangeHandler}/>
+                        <Form.Control type="password" placeholder="Re-Password" value={this.state.repassword} onChange={this.repasswordChangeHandler}/>
                     </Form.Group>
 
                     <Form.Group controlId="formBasicPassword">
@@ -117,7 +121,7 @@ class Registration extends React.Component{
                     </Form.Group>
 
 
-                    <Button variant="primary" type="submit">Submit</Button>
+                    <Button variant="dark" type="submit">Submit</Button>
                  </Form>
              </div>
         )

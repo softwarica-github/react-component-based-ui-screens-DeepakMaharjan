@@ -15,7 +15,7 @@ class Login extends React.Component{
 
 		this.state = {
 			username: '',
-			password: ''
+			password: '',
 		}
 
 }
@@ -69,17 +69,11 @@ render(){
 			<Form.Group controlId="formBasicEmail">
 				<Form.Label>Username </Form.Label>
 				<Form.Control type="text" placeholder="Enter username" value={this.state.username} onChange={this.usernameChangeHandler} />
-				<Form.Text className="text-muted">
-				Login
-				</Form.Text>
 			</Form.Group>
 
 				<Form.Group controlId="formBasicPassword">
 				<Form.Label>Password</Form.Label>
 				<Form.Control type="password" placeholder="Enter password" value={this.state.password} onChange={this.passwordChangeHandler} />
-				<Form.Text className="text-muted">
-				We'll never share your email with anyone else.
-				</Form.Text>
 			</Form.Group>
 
 
